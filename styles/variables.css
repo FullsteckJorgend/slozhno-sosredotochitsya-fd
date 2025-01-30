@@ -108,7 +108,6 @@
     --gap__main: 20px;
     --grid-column__section-title: 1 / 2;
     --grid-column__card-section: 2 / 4;
-
     --margin-top__img-section: 0px;
     --gap__img-section: 20px;
     --grid-template-columns__img-section: 1fr 1fr 1fr;
@@ -152,13 +151,10 @@
     --top_decorated-zone-after: 723px;
     --padding-left__card-section: 0px;
     /*header END*/ /**/
-
     --grid-column__multitasking:1/2;
     --grid-column__meal:2/3;
     --grid-column__Gadgets:3/4;    
-
     --grid-column__card-section-modifed-horizontally: none;
-
     --font-size-footer-title: 157px;
     --height__footer: 768px;
   }

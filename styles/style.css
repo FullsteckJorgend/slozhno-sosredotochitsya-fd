@@ -282,7 +282,7 @@ main {
 }
 
 .png {
-  width: calc(100vw - 35px);
+  inline-size: calc(100vw - 20px); /*--inline-size_png:;*/
 }
 
 /* @media (min-width: 768px) {

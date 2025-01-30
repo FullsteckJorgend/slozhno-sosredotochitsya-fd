@@ -9,7 +9,7 @@
   }
 
   .png {
-    width: 100%;
+    inline-size: 100%;
     min-block-size: 100%;
     object-fit: cover;
     overflow: hidden;
@@ -60,7 +60,7 @@
   .card-section.modifed-vertically {
     padding-top: 59px;
   }
-  
+
   .multitasking {
     grid-column: var(--grid-column__multitasking);
   }
@@ -70,6 +70,6 @@
   }
 
   .Gadgets {
-    grid-column: var(--grid-column__Gadgets);       
+    grid-column: var(--grid-column__Gadgets);
   }
 }
