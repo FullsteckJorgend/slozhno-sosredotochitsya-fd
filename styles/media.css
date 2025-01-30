@@ -42,7 +42,7 @@
 @media (min-width: 768px) {
   /* .card-section.modifed-horizontally {
     grid-column: 1 / 4;
-    padding-left: 0px;
+    padding-top: 61px;
   } */
 
   .section-title.modifed-horizontally-title {
@@ -56,23 +56,20 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .card-section.modifed-vertically {
     padding-top: 59px;
   }
-  .modifed-horizontally {
-    grid-column: none;
-  }
-
+  
   .multitasking {
-    grid-column: 1 / 2;
+    grid-column: var(--grid-column__multitasking);
   }
 
   .meal {
-    grid-column: 2 / 3;
+    grid-column: var(--grid-column__meal);
   }
 
   .Gadgets {
-    grid-column: 3 / 4;
+    grid-column: var(--grid-column__Gadgets);       
   }
 }

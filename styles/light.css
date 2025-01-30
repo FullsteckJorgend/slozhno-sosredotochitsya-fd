@@ -28,7 +28,7 @@
   --color-section-text: #353430;
   --background-card-title: #ff8dcb;
   --color-footer-title: #ffc2e6;
-  --t-shadow-color-footer-title: #ff8dcb;
+  --t-shadow-color-footer-title: #FF0070;
 }
 
 @media (prefers-color-scheme: light) {
@@ -52,6 +52,6 @@
     --color-section-text: #353430;
     --background-card-title: #ff8dcb;
     --color-footer-title: #ffc2e6;
-    --t-shadow-color-footer-title: #ff8dcb;
+    --t-shadow-color-footer-title: #FF0070;
   }
 }

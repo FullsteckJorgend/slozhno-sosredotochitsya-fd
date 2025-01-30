@@ -2,6 +2,7 @@
 
 .page {
   background-color: var(--all-background-color);
+  background-attachment: fixed;
   font-family: var(--main-font);
   font-weight: normal;
   display: grid;
@@ -144,9 +145,6 @@
   font-size: 1.125rem;
   font-weight: bold;
   line-height: 23.4px;
-  font-family: IBM Plex Mono;
-  font-weight: 700;
-  text-underline-position: from-font;
 }
 
 /*/HEADER/*/
@@ -342,7 +340,7 @@ main {
   font-size: var(--font-size-footer-title);
   color: var(--color-footer-title);
   text-shadow: 2px 2px 0px var(--t-shadow-color-footer-title);
-  line-height: var(--inline-height__footer__title);
+  line-height: var(--t-shadow-color-footer-title);
 }
 
 /* @media (min-width: 768px) {
