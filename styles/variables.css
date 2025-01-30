@@ -2,3 +2,229 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --header-title-font-size: 0px;
+}
+/*я не знаю как и что делать этими < = >*/
+@media (min-width: 375px) {
+  :root {
+    --main-font: "IBM Plex mono", sans-serif;
+    --grid-template-columns__main: min-content;
+    --grid-template-rows__main: min-content min-content;
+    --height-header: 668px;
+    --top_decorated-zone-before: 10px;
+    --right_decorated-zone-before: 10px;
+    --left_decorated-zone-after: 10px;
+    --top_decorated-zone-after: 633px;
+    --top_rec: 12px;
+    --right_rec: 38px;
+    --top-rec-after: 7px;
+    --margin-inline-start-rec-after: 10px;
+    --margin-inline-start__header-theme-menu-list: 0px;
+    --margin-block-start__header-theme-menu-list: 72px;
+    --gap__header-theme-menu-list: 11px;
+    --font-size-header-title: 116px;
+    --margin-block-start__header__title: 66px;
+    --margin-block-end__header__title: 54px;
+    --all-padding: 0px 10px 0px 10px;
+    --inline_box__text: 355px;
+    --padding-right__box__text:17px;
+    --margin-block-start__box__text: 50px;
+    --margin-inline-start__box__text: 0px;
+    --inline-height__header__title: 96px;
+    --margin-block-start__section-title: 39px;
+    --margin-block-start__card-section: 20px;
+    --padding-left__card-section: 0px;
+    --margin-block-start__img-section__title: 49px;
+    --flex-direction__header-theme-menu-list: column;
+    --align-items__header-theme-menu-list: flex-end;
+
+    --all-padding-right: 10px;
+    --all-padding-left: 10px;
+    --padding-left__header: 10px;
+    --padding-right__header:10px;
+    --padding-right-box__text: 0px;
+    /*main grid*/
+    --gap__main: 0px;
+    --display__cards-list: block;
+    --margin-block-start__list-img: 0px;
+    --grid-column__section-title: none;
+    --grid-column__card-section: none;
+
+    --margin-top__img-section: 10px;
+    --gap__img-section: 10px;
+    --grid-template-columns__img-section: 1fr;
+    --grid-template-rows__img-section: 1fr;
+    /*main grid END*/
+    /*footer*/
+    --margin-block-start__footer: 40px;
+    --height__footer: 668px;
+    --font-size-footer-title: 116px;
+    --inline-height__footer__title: 95.7px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --main-font: "IBM Plex mono", sans-serif;
+    --grid-template-columns__main: 1fr 1fr 1fr; /*времено 1px шоьы нэ мешал а так 3 fr*/
+    --grid-template-rows__main: min-content min-content;
+    --height-header: 1024px;
+    --top_decorated-zone-before: 20px;
+    --right_decorated-zone-before: 20px;
+    --left_decorated-zone-after: 20px;
+    --top_decorated-zone-after: 979px;
+    --top_rec: 20px;
+    --right_rec: 48px;
+    --top-rec-after: 8px;
+    --margin-inline-start-rec-after: 10px;
+    /*decor END*/ /*button*/
+    --flex-direction__header-theme-menu-list: column;
+    --align-items__header-theme-menu-list: flex-end;
+    --margin-block-start__header-theme-menu-list: 190px;
+    --margin-inline-end__header-theme-menu-list: 20px;
+    --gap__header-theme-menu-list: 11px;
+    /*button END*/ /*header*/
+    --padding-right__header:20px;
+    --padding-right-box__text: 0px;
+    --font-size-header-title: 120px;
+    --margin-block-start__header__title: 175px;
+    --margin-block-end__header__title: 55px;
+    --inline_box__text: 364px;
+    --margin-block-start__box__text: 164px;
+    --margin-inline-start__box__text: 384px;
+    --margin-block-start__section-title: 61px;
+    --margin-block-start__card-section: 0px;
+    --padding-left__card-section: 7px;
+    --margin-block-start__img-section__title: 49px; /*bbbbfgbdfgsdfgfdsgfdsgfdgsfdgsfdgmgfyjdsfsgdhjfhgd*/
+    /*haader END*/ /*main grid*/
+    --display__cards-list: grid;
+    --margin-block-start__list-img: 30px;
+    --all-padding-right: 20px;
+    --all-padding-left: 20px;
+    --padding-left__header: 0px;
+    --gap__main: 20px;
+    --grid-column__section-title: 1 / 2;
+    --grid-column__card-section: 2 / 4;
+
+    --margin-top__img-section: 0px;
+    --gap__img-section: 20px;
+    --grid-template-columns__img-section: 1fr 1fr 1fr;
+    --grid-template-rows__img-section: 1fr;
+
+    /*main grid END*/ /*footer*/
+    --margin-block-start__footer: 60px;
+    --font-size-footer-title: 120px;
+    --height__footer: 1027px; /*small:668px; mid:1024px; big:768px;*/
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    /*GLOBAL*/
+    --main-font: "IBM Plex mono", sans-serif;
+    /*GLOBAL END*/ /*header*/
+    --margin-block-start__header__title: 289px;
+    --padding-right-box__text: 20px;
+    --padding-right__header:0px;
+    --padding-left__header: 0px; 
+    --margin-inline-start__box__text:512px;
+    --padding-right__box__text:0px;
+    --margin-block-start__box__text: 131px;
+    /*button*/    
+    --margin-block-start__header-theme-menu-list: 19px;
+    --margin-inline-end__header-theme-menu-list: 0px;
+    --gap__header-theme-menu-list: 10px;
+    --flex-direction__header-theme-menu-list: row;
+    --align-items__header-theme-menu-list: flex-start;
+    --justify-content__header__theme-menu-list: center;
+    --font-size-header-title: 157px;
+    --height-header: 768px; /*decor*/
+    --left_decorated-zone-after: 20px;
+    --top_decorated-zone-after: 723px;
+    --padding-left__card-section:0px;
+    /*header END*/ /**/
+
+
+    --font-size-footer-title: 157px;
+    --height__footer: 768px;
+  }
+}
+
+
+
+/* @media (min-width: 768px) {
+  .card-section-png {
+    padding-left: var(--all-padding-left);
+    padding-right: var(--all-padding-right);
+  }
+
+  .png {
+    width: 100%;
+    min-block-size: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .sunset {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  .ice-cream {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+  }
+  .tape {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+  }
+  .books {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .street {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+  } 
+}*/
+/* 
+@media (min-width: 768px) {
+
+  .card-section.modifed-horizontally {
+    grid-column: 1 / 4;
+    padding-left: 0px;
+  }
+
+  .section-title.modifed-horizontally-title {
+    padding-top: 10px;
+  }
+  .section-title.modifed-vertically-title {
+    padding-top: 10px;
+  }
+  .card-section.modifed-vertically {
+    padding-top: 61px;
+  }
+} */
+
+/* @media (min-width: 1024px) {
+  .card-section.modifed-horizontally:nth-child(1) {
+    grid-column: 1 / 2;
+    padding-left: 0px;
+  }
+  .card-section.modifed-horizontally:nth-child(2) {
+    grid-column: 2 / 3;
+    padding-left: 0px;
+  }
+  .card-section.modifed-horizontally:nth-child(3) {
+    grid-column: 3 / 4;
+    padding-left: 0px;
+  } 
+
+
+
+
+
+}*/

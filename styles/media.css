@@ -1,0 +1,78 @@
+@media (min-width: 768px) {
+  .img-section__title {
+    margin-block-start: 49px;
+  }
+
+  .card-section-png {
+    padding-left: var(--all-padding-left);
+    padding-right: var(--all-padding-right);
+  }
+
+  .png {
+    width: 100%;
+    min-block-size: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .sunset {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  .ice-cream {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+  }
+  .tape {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+  }
+  .books {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .street {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+  }
+}
+
+@media (min-width: 768px) {
+  /* .card-section.modifed-horizontally {
+    grid-column: 1 / 4;
+    padding-left: 0px;
+  } */
+
+  .section-title.modifed-horizontally-title {
+    padding-top: 10px;
+  }
+  .section-title.modifed-vertically-title {
+    padding-top: 10px;
+  }
+  .card-section.modifed-vertically {
+    padding-top: 61px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-section.modifed-vertically {
+    padding-top: 59px;
+  }
+  .modifed-horizontally {
+    grid-column: none;
+  }
+
+  .multitasking {
+    grid-column: 1 / 2;
+  }
+
+  .meal {
+    grid-column: 2 / 3;
+  }
+
+  .Gadgets {
+    grid-column: 3 / 4;
+  }
+}
