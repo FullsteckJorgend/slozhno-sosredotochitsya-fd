@@ -39,7 +39,6 @@
     --margin-block-start__img-section__title: 49px;
     --flex-direction__header-theme-menu-list: column;
     --align-items__header-theme-menu-list: flex-end;
-
     --all-padding-right: 10px;
     --all-padding-left: 10px;
     --padding-left__header: 10px;
@@ -51,7 +50,6 @@
     --margin-block-start__list-img: 0px;
     --grid-column__section-title: none;
     --grid-column__card-section: none;
-
     --margin-top__img-section: 10px;
     --gap__img-section: 10px;
     --grid-template-columns__img-section: 1fr;
@@ -68,7 +66,8 @@
 @media (min-width: 768px) {
   :root {
     --main-font: "IBM Plex mono", sans-serif;
-    --grid-template-columns__main: 1fr 1fr 1fr; /*времено 1px шоьы нэ мешал а так 3 fr*/
+    --grid-template-columns__main: 1fr 1fr 1fr;
+    /*времено 1px шоьы нэ мешал а так 3 fr*/
     --grid-template-rows__main: min-content min-content;
     --height-header: 1024px;
     --top_decorated-zone-before: 20px;
@@ -97,7 +96,7 @@
     --margin-block-start__section-title: 61px;
     --margin-block-start__card-section: 0px;
     --padding-left__card-section: 7px;
-    --margin-block-start__img-section__title: 49px; 
+    --margin-block-start__img-section__title: 49px;
     --grid-column__card-section-modifed-horizontally:1 /4;
     /*haader END*/ /*main grid*/
     --display__cards-list: grid;
@@ -116,12 +115,13 @@
 
     --grid-column__multitasking:1/4;
     --grid-column__meal:1/4;
-    --grid-column__Gadgets:1/4;  
+    --grid-column__Gadgets:1/4;
 
     /*main grid END*/ /*footer*/
     --margin-block-start__footer: 60px;
     --font-size-footer-title: 120px;
-    --height__footer: 1027px; /*small:668px; mid:1024px; big:768px;*/
+    --height__footer: 1027px;
+    /*small:668px; mid:1024px; big:768px;*/
   }
 }
 
@@ -145,7 +145,7 @@
     --align-items__header-theme-menu-list: flex-start;
     --justify-content__header__theme-menu-list: center;
     --font-size-header-title: 157px;
-    --height-header: 768px; 
+    --height-header: 768px;
     /*decor*/
     --left_decorated-zone-after: 20px;
     --top_decorated-zone-after: 723px;
@@ -153,7 +153,7 @@
     /*header END*/ /**/
     --grid-column__multitasking:1/2;
     --grid-column__meal:2/3;
-    --grid-column__Gadgets:3/4;    
+    --grid-column__Gadgets:3/4;
     --grid-column__card-section-modifed-horizontally: none;
     --font-size-footer-title: 157px;
     --height__footer: 768px;
