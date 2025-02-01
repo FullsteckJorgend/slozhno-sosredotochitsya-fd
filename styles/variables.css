@@ -3,13 +3,13 @@
   и их переопределение под различные устройства
 */
 
-:root {
+:root {    
+  --main-font: "IBM Plex mono", sans-serif;
   --header-title-font-size: 0px;
 }
 /*я не знаю как и что делать этими < = >*/
 @media (min-width: 375px) {
   :root {
-    --main-font: "IBM Plex mono", sans-serif;
     --grid-template-columns__main: min-content;
     --grid-template-rows__main: min-content min-content;
     --height-header: 668px;
@@ -57,7 +57,7 @@
     /*main grid END*/
     /*footer*/
     --margin-block-start__footer: 40px;
-    --height__footer: 668px;
+    --height__header-footer: 668px;
     --font-size-footer-title: 116px;
     --inline-height__footer__title: 95.7px;
   }
@@ -65,7 +65,6 @@
 
 @media (min-width: 768px) {
   :root {
-    --main-font: "IBM Plex mono", sans-serif;
     --grid-template-columns__main: 1fr 1fr 1fr;
     /*времено 1px шоьы нэ мешал а так 3 fr*/
     --grid-template-rows__main: min-content min-content;
@@ -91,7 +90,7 @@
     --margin-block-start__header__title: 175px;
     --margin-block-end__header__title: 55px;
     --inline_box__text: 364px;
-    --margin-block-start__box__text: 164px;
+    --margin-block-start__box__text: 109px;
     --margin-inline-start__box__text: 384px;
     --margin-block-start__section-title: 61px;
     --margin-block-start__card-section: 0px;
@@ -120,23 +119,20 @@
     /*main grid END*/ /*footer*/
     --margin-block-start__footer: 60px;
     --font-size-footer-title: 120px;
-    --height__footer: 1027px;
+    --height__header-footer: 1024px;
     /*small:668px; mid:1024px; big:768px;*/
   }
 }
 
 @media (min-width: 1024px) {
   :root {
-    /*GLOBAL*/
-    --main-font: "IBM Plex mono", sans-serif;
-    /*GLOBAL END*/ /*header*/
     --margin-block-start__header__title: 289px;
     --padding-right-box__text: 20px;
     --padding-right__header: 0px;
     --padding-left__header: 0px;
     --margin-inline-start__box__text: 512px;
     --padding-right__box__text: 0px;
-    --margin-block-start__box__text: 131px;
+    --margin-block-start__box__text: 76px;
     /*button*/
     --margin-block-start__header-theme-menu-list: 19px;
     --margin-inline-end__header-theme-menu-list: 0px;
@@ -156,6 +152,6 @@
     --grid-column__Gadgets:3/4;
     --grid-column__card-section-modifed-horizontally: none;
     --font-size-footer-title: 157px;
-    --height__footer: 768px;
+    --height__header-footer: 768px;
   }
 }

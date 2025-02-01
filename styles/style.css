@@ -1,25 +1,26 @@
-
-
 .page {
-  background-color: var(--all-background-color);
+  
   background-attachment: fixed;
+
   font-family: var(--main-font);
   font-weight: normal;
   display: grid;
   box-sizing: border-box;
-  font-size: 1.125rem;
-}
-
-.header {
+  font-size: 1.125rem;  
   background-image: var(--background-image);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.header {
+  /* background-image: var(--background-image); */
+  min-block-size: var(--height__header-footer);
   position: relative;
   min-block-size: var(--height-header);
   padding-right: var(--padding-right__header);
   padding-left: var(--padding-left__header);
-} /*убрать grid = смэрть нервных клеток*/
+}
 
 .decorated-zone::before,
 .decorated-zone::after {
@@ -37,12 +38,8 @@
   z-index: 1;
 
   grid-column: 2 / 3;
-  top: var(
-    --top_decorated-zone-before
-  ); /*  var(--top_decorated-zone-before);  */ /*10px*/
-  right: var(
-    --right_decorated-zone-before
-  ); /*    var(--right_decorated-zone-before);*/ /*10px*/
+  top: var(--top_decorated-zone-before);
+  right: var(--right_decorated-zone-before);
 }
 
 .decorated-zone::after {
@@ -51,8 +48,8 @@
   border-right: none;
   width: 25.04px;
   min-block-size: 25px;
-  left: var(--left_decorated-zone-after); /*--left_decorated-zone-after:10px; */
-  top: var(--top_decorated-zone-after); /*--top_decorated-zone-before:633px;*/
+  left: var(--left_decorated-zone-after);
+  top: var(--top_decorated-zone-after);
   z-index: 1;
 }
 
@@ -82,20 +79,12 @@
 
 /*BUTTON*/
 
-/* .header__theme-menu {
-   inline-size: 70px;
-   
-  margin-inline-start: 600px;
-} */
 .header__theme-menu-list {
   display: flex;
   flex-direction: var(--flex-direction__header-theme-menu-list);
   align-items: var(--align-items__header-theme-menu-list);
   justify-content: var(--justify-content__header__theme-menu-list);
   margin-block-start: var(--margin-block-start__header-theme-menu-list);
-  /*  */
-
-  font-size: 1.125rem;
   gap: var(--gap__header-theme-menu-list);
 }
 
@@ -107,16 +96,27 @@
 }
 
 .header__theme-menu-button_active {
-  padding: 0px 0px 26px 0px;
-  width: 70px;
-  block-size: 26px;
+
   border: 1px solid var(--border-color-button);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid #FF007066;
 }
 
 .header__theme-menu-button:focus-visible {
   border: none;
   outline: none;
   border-bottom: 1px solid var(--color-header-menu-button);
+}
+
+.header__theme-menu-button_active:hover {
+  border: 1px solid var(--border-color-button);
+}
+.header__theme-menu-button_active:focus-visible {
+  border: none;
+  outline: none;
+  border-bottom: none;
 }
 /*-BUTTON-*/
 
@@ -129,14 +129,8 @@
   margin-block-end: var(--margin-block-end__header__title);
 }
 
-.box__text {
-  background-color: var(--background-color-text);
-  min-block-size: min-content;
-  padding-right: var(--padding-right__box__text); /*17px*/
-  margin-block-end: 15px;
-  margin-block-start: var(--margin-block-start__box__text);
-  margin-inline-start: var(--margin-inline-start__box__text);
-  margin-inline-end: var(--padding-right-box__text);
+.title-decor {
+    background-color: var(--background-color-text);
 }
 
 .header__text {
@@ -145,6 +139,13 @@
   font-size: 1.125rem;
   font-weight: bold;
   line-height: 23.4px;
+  min-block-size: min-content;
+  padding-right: var(--padding-right__box__text);
+  margin-block-end: 15px;
+  margin-block-start: var(--margin-block-start__box__text);
+  margin-inline-start: var(--margin-inline-start__box__text);
+  margin-inline-end: var(--padding-right-box__text);
+
 }
 
 /*/HEADER/*/
@@ -159,11 +160,18 @@ main {
   margin-block-start: var(--margin-block-start__section-title);
   padding-right: var(--all-padding-right);
   padding-left: var(--all-padding-left);
-  display: var(--display__cards-list); /*--display__cards-list:grid;*/
+  display: var(--display__cards-list);
   grid-template-columns: var(--grid-template-columns__main);
   grid-template-rows: var(--grid-template-rows__main);
   gap: var(--gap__main);
-} /*не забыть переменовать с main на cards-list*/
+}
+
+@media (min-width: 768px) {
+.cards-list:not(:first-child) {
+  margin-block-start: 80px;
+}
+}
+
 
 .list-img {
   margin-block-start: var(--margin-block-start__list-img);
@@ -181,12 +189,16 @@ main {
   margin-block-start: 50px;
 }
 
+@media (min-width: 768px) {
+  .section-title {
+    grid-column: 1 / 2;
+  }
+}
+
 .card-section {
-  margin-block-start: var(
-    --margin-block-start__card-section
-  ); /*--margin-block-start__card-section*/
+  margin-block-start: var(--margin-block-start__card-section);
   grid-column: var(--grid-column__card-section);
-  padding-left: var(--padding-left__card-section); /*7*/
+  padding-left: var(--padding-left__card-section);
 }
 
 /*text*/
@@ -194,7 +206,6 @@ main {
 .card-section__title {
   font-size: 1.125rem;
   color: var(--color-section-card-title);
-  background-color: var(--background-card-title);
 }
 
 .card-section__title-last {
@@ -224,13 +235,6 @@ main {
   outline-offset: 0px;
 }
 
-/*.link:focus-visible красивее, 
-если надо исправить, 
-можно просто дать 
-.link:focus теже стили что у 
-.link:focus-visible и удалить 
-.link:focus-visible*/
-
 .link:focus-visible {
   outline: 1px solid var(--color-section-text);
   outline-offset: 2px;
@@ -239,7 +243,7 @@ main {
 .link:active {
   text-shadow: none;
   color: #ff0070;
-} /*отзывчивость должна быть!*/
+}
 
 /*-LINK-*/
 
@@ -262,9 +266,7 @@ main {
   background-color: var(--background-card-title);
   font-weight: bold;
   font-size: 1.125rem;
-  margin-block-start: var(
-    --margin-block-start__img-section__title
-  ); /*--margin-block-start__img-section__title:49px;*/
+  margin-block-start: var(--margin-block-start__img-section__title);
 }
 
 .img-section {
@@ -282,54 +284,15 @@ main {
 }
 
 .png {
-  inline-size: calc(100vw - 20px); /*--inline-size_png:;*/
+  inline-size: 100%;
 }
-
-/* @media (min-width: 768px) {
-  .card-section-png {
-    padding-left: var(--all-padding-left);
-    padding-right: var(--all-padding-right);
-  }
-
-  .png {
-    width: 100%;
-    min-block-size: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .sunset {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-  }
-  .ice-cream {
-    grid-column: 3 / 4;
-    grid-row: 2 / 4;
-  }
-  .tape {
-    grid-column: 1 / 2;
-    grid-row: 3 / 5;
-  }
-  .books {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-  }
-  .street {
-    grid-column: 2 / 4;
-    grid-row: 4 / 5;
-  }
-} */
 
 /*footer*/
 
 .footer {
-  margin-block-start: var(
-    --margin-block-start__footer
-  ); /*margin-block-start__footer*/
+  margin-block-start: var(--margin-block-start__footer);
 
-  min-block-size: var(--height__footer); /* --height__footer:;*/
+  min-block-size: var(--height__header-footer);
   position: relative;
   display: flex;
   align-items: center;
@@ -343,18 +306,21 @@ main {
   line-height: var(--t-shadow-color-footer-title);
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .img-section__title {
+    margin-block-start: var(--margin-block-start__img-section__title);
+  }
+
   .card-section-png {
     padding-left: var(--all-padding-left);
     padding-right: var(--all-padding-right);
   }
 
   .png {
-    width: 100%;
+    inline-size: 100%;
     min-block-size: 100%;
     object-fit: cover;
     overflow: hidden;
-    background-size: cover;
     background-position: center;
   }
 
@@ -382,18 +348,25 @@ main {
 
 @media (min-width: 768px) {
 
-  .card-section.modifed-horizontally {
-    grid-column: 1 / 4;
-    padding-left: 0px;
+
+  .multitasking {
+    grid-column: var(--grid-column__multitasking);
   }
 
-  .section-title.modifed-horizontally-title {
-    padding-top: 10px;
+  .meal {
+    grid-column: var(--grid-column__meal);
   }
-  .section-title.modifed-vertically-title {
-    padding-top: 10px;
+
+  .Gadgets {
+    grid-column: var(--grid-column__Gadgets);
   }
-  .card-section.modifed-vertically {
-    padding-top: 61px;
+
+}
+
+@media (min-width: 768px), (max-width: 1023.99989px) {
+  .cards-list:nth-of-type(2) .card-section {
+    padding-left: 0px;
   }
-} */
+}/*мне дали ограничение, я придерживаясь их написал это правило*/
+
+
