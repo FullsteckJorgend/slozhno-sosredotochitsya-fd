@@ -9,7 +9,8 @@
 }
 /*я не знаю как и что делать этими < = >*/
 @media (min-width: 375px) {
-  :root {
+  :root {    
+    --height__header-footer: 668px;
     --grid-template-columns__main: min-content;
     --grid-template-rows__main: min-content min-content;
     --height-header: 668px;
@@ -30,7 +31,7 @@
     --all-padding: 0px 10px 0px 10px;
     --inline_box__text: 355px;
     --padding-right__box__text: 17px;
-    --margin-block-start__box__text: 50px;
+    --margin-block-start__box__text: 1px;
     --margin-inline-start__box__text: 0px;
     --inline-height__header__title: 96px;
     --margin-block-start__section-title: 39px;
@@ -57,7 +58,7 @@
     /*main grid END*/
     /*footer*/
     --margin-block-start__footer: 40px;
-    --height__header-footer: 668px;
+
     --font-size-footer-title: 116px;
     --inline-height__footer__title: 95.7px;
   }
