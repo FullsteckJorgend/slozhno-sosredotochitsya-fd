@@ -29,6 +29,7 @@
   --background-card-title: rgb(255, 0, 112);
   --color-footer-title: rgba(219, 0, 255, 1);
   --t-shadow-color-footer-title: rgb(255, 0, 112);
+  --border__header__theme-menu-button-hover: #ff007066;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,5 +54,6 @@
     --background-card-title: rgb(255, 0, 112);
     --color-footer-title: rgba(219, 0, 255, 1);
     --t-shadow-color-footer-title: rgb(255, 0, 112);
+    --border__header__theme-menu-button-hover: #ff007066;
   }
 }

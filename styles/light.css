@@ -28,7 +28,8 @@
   --color-section-text: #353430;
   --background-card-title: #ff8dcb;
   --color-footer-title: #ffc2e6;
-  --t-shadow-color-footer-title: #FF0070;
+  --t-shadow-color-footer-title: #ff0070;
+  --border__header__theme-menu-button-hover: #32312d66;
 }
 
 @media (prefers-color-scheme: light) {
@@ -52,6 +53,7 @@
     --color-section-text: #353430;
     --background-card-title: #ff8dcb;
     --color-footer-title: #ffc2e6;
-    --t-shadow-color-footer-title: #FF0070;
+    --t-shadow-color-footer-title: #ff0070;
+    --border__header__theme-menu-button-hover: #32312d66;
   }
 }
