@@ -1,6 +1,5 @@
 /*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
+  здарствуйте, вроде бы все дубликаты убраны, но я не уверен на 100%.
 */
 
 :root {
@@ -80,6 +79,7 @@
     --gap__img-section: 10px;
     --grid-template-columns__img-section: 1fr;
     --grid-template-rows__img-section: 1fr;
+    --margin-block-start__list-card-section-card-section-not-first-of-type: 20px;
     /*main grid END*/
     /*footer*/
     --margin-block-start__footer: 40px;
@@ -92,7 +92,6 @@
   :root {
     --grid-template-columns__main: 1fr 1fr 1fr;
     /*времено 1px шоьы нэ мешал а так 3 fr*/
-    --height-header: 1024px;
     --top_decorated-zone-before: 20px;
     --right_decorated-zone-before: 20px;
     --left_decorated-zone-after: 20px;
@@ -106,6 +105,7 @@
     /*button END*/ /*header*/
     --padding-right__header: 20px;
     --font-size-header-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --margin-block-start__list-card-section-card-section-not-first-of-type: 20px;
     --margin-block-start__header__title: 175px;
     --margin-block-end__header__title: 55px;
     --inline_box__text: 364px;
@@ -121,17 +121,14 @@
     --all-padding-right: 20px;
     --all-padding-left: 20px;
     --padding-left__header: 0px;
-    --gap__main: 20px;
+
     --grid-column__section-title: 1 / 2;
     --grid-column__card-section: 2 / 4;
     --margin-top__img-section: 0px;
     --gap__img-section: 20px;
     --grid-template-columns__img-section: 1fr 1fr 1fr;
 
-    --grid-column__multitasking: 1/4;
-    --grid-column__meal: 1/4;
-    --grid-column__gadgets: 1/4;
-
+    --gap__main: 20px;
     /*main grid END*/ /*footer*/
     --margin-block-start__footer: 60px;
     --font-size-footer-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -141,14 +138,15 @@
 
 @media (min-width: 1024px) {
   :root {
+    --margin-block-start__list-card-section-card-section-not-first-of-type: 0px;
     --margin-block-start__header__title: 289px;
     --padding-right-box__text: 20px;
     --padding-right__header: 0px;
-    --padding-left__header: 0px;
     --margin-inline-start__box__text: 512px;
     --padding-right__box__text: 0px;
     --margin-block-start__box__text: 76px;
     /*button*/
+
     --margin-block-start__header-theme-menu-list: 19px;
     --margin-inline-end__header-theme-menu-list: 0px;
     --gap__header-theme-menu-list: 10px;
@@ -160,9 +158,6 @@
     --left_decorated-zone-after: 20px;
     --padding-left__card-section: 0px;
     /*header END*/ /**/
-    --grid-column__multitasking: 1/2;
-    --grid-column__meal: 2/3;
-    --grid-column__gadgets: 3/4;
     --grid-column__card-section-modifed-horizontally: none;
     --height__header-footer: 768px;
   }

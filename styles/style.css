@@ -193,18 +193,19 @@
   }
 }
 
+/* .cards-list:not(:first-child) {
+  margin-block-start: 50px;
+} */
+
+.list-card-section .card-section:not(:first-of-type) {
+  margin-block-start: var(    --margin-block-start__list-card-section-card-section-not-first-of-type); /*--margin-block-start__list-card-section-card-section-not-first-of-type*/
+}
+
+
+
 .cards-list:not(:first-child) {
   margin-block-start: 50px;
 }
-
-/* 
-.cards-list:nth-child(2) {
-  margin-block-start: 50px;
-}
-
-.cards-list:nth-child(3) {
-  margin-block-start: 50px;
-} */
 
 .card-section {
   margin-block-start: var(--margin-block-start__card-section);
@@ -335,7 +336,6 @@
   }
 
   .png {
-    inline-size: 100%;
     min-block-size: 100%;
     object-fit: cover;
     overflow: hidden;
@@ -378,8 +378,8 @@
   }
 }
 
-@media (min-width: 768px), (max-width: 1023.99989px) {
-  .cards-list:nth-of-type(2) .card-section {
+ @media (min-width: 768px), (max-width: 1023.99989px) {
+  .list-card-section .card-section {
     padding-left: 0px;
   }
-} /*мне дали ограничение, я придерживаясь их написал это правило*/
+} /*мне дали ограничение, я придерживаясь их написал это правило */
