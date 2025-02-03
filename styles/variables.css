@@ -130,7 +130,7 @@
 
     --grid-column__multitasking: 1/4;
     --grid-column__meal: 1/4;
-    --grid-column__Gadgets: 1/4;
+    --grid-column__gadgets: 1/4;
 
     /*main grid END*/ /*footer*/
     --margin-block-start__footer: 60px;
@@ -162,7 +162,7 @@
     /*header END*/ /**/
     --grid-column__multitasking: 1/2;
     --grid-column__meal: 2/3;
-    --grid-column__Gadgets: 3/4;
+    --grid-column__gadgets: 3/4;
     --grid-column__card-section-modifed-horizontally: none;
     --height__header-footer: 768px;
   }
