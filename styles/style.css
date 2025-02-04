@@ -197,9 +197,7 @@
   margin-block-start: 50px;
 } */
 
-.list-card-section .card-section:not(:first-of-type) {
-  margin-block-start: var(--margin-block-start__card-section); 
-}
+
 
 
 
@@ -290,6 +288,10 @@
 
 .png {
   inline-size: 100%;
+}
+
+.list-card-section .card-section:not(:first-of-type) {
+  margin-block-start: var(--margin-block-start__card-section-not); 
 }
 
 /*footer*/

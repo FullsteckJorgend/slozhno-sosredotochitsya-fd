@@ -74,7 +74,7 @@
     --gap__img-section: 10px;
     --grid-template-columns__img-section: 1fr;
     --grid-template-rows__img-section: 1fr;
-    --margin-block-start__card-section: 20px;
+    --margin-block-start__card-section-not: 0px;
     /*main grid END*/
     /*footer*/
     --margin-block-start__footer: 40px;
@@ -107,6 +107,7 @@
     --margin-inline-start__box__text: 384px;
     --margin-block-start__section-title: 61px;
     --margin-block-start__card-section: 0px;
+    --margin-block-start__card-section-not: 20px;
     --padding-left__card-section: 7px;
     /*haader END*/ /*main grid*/
     --display__cards-list: grid;
