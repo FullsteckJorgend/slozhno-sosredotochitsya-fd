@@ -198,7 +198,7 @@
 } */
 
 .list-card-section .card-section:not(:first-of-type) {
-  margin-block-start: var(    --margin-block-start__list-card-section-card-section-not-first-of-type); /*--margin-block-start__list-card-section-card-section-not-first-of-type*/
+  margin-block-start: var(--margin-block-start__card-section); 
 }
 
 
@@ -361,20 +361,6 @@
   .street {
     grid-column: 2 / 4;
     grid-row: 4 / 5;
-  }
-}
-
-@media (min-width: 768px) {
-  .multitasking {
-    grid-column: var(--grid-column__multitasking);
-  }
-
-  .meal {
-    grid-column: var(--grid-column__meal);
-  }
-
-  .gadgets {
-    grid-column: var(--grid-column__gadgets);
   }
 }
 

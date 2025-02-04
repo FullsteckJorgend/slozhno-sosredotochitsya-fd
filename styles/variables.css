@@ -6,8 +6,6 @@
   --main-font: "IBM Plex mono", sans-serif;
   --box-shadow-rec-after: #ff0070;
   --border-color-box-border: #ff0070;
-  --background-color-dicirationin_circle: #ff0070;
-  --box-shadow-dicirationin_circle: #ff0070;
   --color-rec: #ff0070;
   --border-color-button: #ff0070;
   --all-background-color: rgb(0, 0, 40);
@@ -21,11 +19,9 @@
   --color-section-card-title: rgb(0, 0, 40);
   --text-shadow-links: rgb(255, 0, 112);
   --color-section-text: rgb(241, 178, 206);
-  --background-card-title: rgb(255, 0, 112);
   --color-footer-title: rgba(219, 0, 255, 1);
   --t-shadow-color-footer-title: rgb(255, 0, 112);
   --border__header__theme-menu-button-hover: #ff007066;
-  --header-title-font-size: 0px;
 }
 /*я не знаю как и что делать этими < = >*/
 /*логика названий переменых: свойство-свойство__класс-html .
@@ -40,7 +36,6 @@
     --grid-template-rows__main: min-content min-content;
     --top_decorated-zone-before: 10px;
     --right_decorated-zone-before: 10px;
-    --right_decorated-zone-after: 10px;
     --left_decorated-zone-after: 10px;
     --top_decorated-zone-after: 10px;
     --top_rec: 12px;
@@ -79,7 +74,7 @@
     --gap__img-section: 10px;
     --grid-template-columns__img-section: 1fr;
     --grid-template-rows__img-section: 1fr;
-    --margin-block-start__list-card-section-card-section-not-first-of-type: 20px;
+    --margin-block-start__card-section: 20px;
     /*main grid END*/
     /*footer*/
     --margin-block-start__footer: 40px;
@@ -105,7 +100,6 @@
     /*button END*/ /*header*/
     --padding-right__header: 20px;
     --font-size-header-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --margin-block-start__list-card-section-card-section-not-first-of-type: 20px;
     --margin-block-start__header__title: 175px;
     --margin-block-end__header__title: 55px;
     --inline_box__text: 364px;
@@ -114,7 +108,6 @@
     --margin-block-start__section-title: 61px;
     --margin-block-start__card-section: 0px;
     --padding-left__card-section: 7px;
-    --grid-column__card-section-modifed-horizontally: 1 /4;
     /*haader END*/ /*main grid*/
     --display__cards-list: grid;
     --margin-block-start__list-img: 30px;
@@ -138,7 +131,7 @@
 
 @media (min-width: 1024px) {
   :root {
-    --margin-block-start__list-card-section-card-section-not-first-of-type: 0px;
+    --margin-block-start__card-section: 0px;
     --margin-block-start__header__title: 289px;
     --padding-right-box__text: 20px;
     --padding-right__header: 0px;
@@ -153,12 +146,9 @@
     --flex-direction__header-theme-menu-list: row;
     --align-items__header-theme-menu-list: flex-start;
     --justify-content__header__theme-menu-list: center;
-    --height-header: 768px;
     /*decor*/
-    --left_decorated-zone-after: 20px;
     --padding-left__card-section: 0px;
     /*header END*/ /**/
-    --grid-column__card-section-modifed-horizontally: none;
     --height__header-footer: 768px;
   }
 }

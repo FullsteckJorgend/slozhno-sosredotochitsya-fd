@@ -9,8 +9,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --background-color-dicirationin_circle: transparent;
-  --box-shadow-dicirationin_circle: transparent;
+
   --color-rec: transparent;
   --box-shadow-rec-after: none;
   --border-color-box-border: #353430;
@@ -26,7 +25,6 @@
   --color-section-card-title: #353430;
   --text-shadow-links: #ff8dcb;
   --color-section-text: #353430;
-  --background-card-title: #ff8dcb;
   --color-footer-title: #ffc2e6;
   --t-shadow-color-footer-title: #ff0070;
   --border__header__theme-menu-button-hover: #32312d66;
@@ -34,8 +32,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color-dicirationin_circle: transparent;
-    --box-shadow-dicirationin_circle: transparent;
+
     --color-rec: transparent;
     --box-shadow-rec-after: none;
     --border-color-box-border: #353430;
@@ -51,7 +48,6 @@
     --color-section-card-title: #353430;
     --text-shadow-links: #ff8dcb;
     --color-section-text: #353430;
-    --background-card-title: #ff8dcb;
     --color-footer-title: #ffc2e6;
     --t-shadow-color-footer-title: #ff0070;
     --border__header__theme-menu-button-hover: #32312d66;
