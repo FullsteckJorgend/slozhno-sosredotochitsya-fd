@@ -291,10 +291,10 @@
 }
 
 .list-card-section .card-section:not(:first-of-type) {
-  margin-block-start: var(--margin-block-start__card-section-not); 
+  margin-block-start: var(--margin-block-start__card-section-not);
 }
 
-/*footer*/
+/*footeron*/
 
 .footer {
   margin-block-start: var(--margin-block-start__footer);
